@@ -31,8 +31,8 @@ lab2
 
 # Запуск под Linux
 ```
-git clone https://github.com/tastefulKeypad/arch_practice
-cd arch_practice/lab2
+git clone https://github.com/tastefulKeypad/arch_practice_2.git
+cd arch_practice_2
 python3 -m venv ./
 source ./bin/activate
 pip install -r requirements.txt
