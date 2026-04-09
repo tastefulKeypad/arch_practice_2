@@ -21,28 +21,24 @@
 - [x] Завершение аренды
 - [x] Получение истории аренд
 
-### Структура проекта
+## Структура проекта
 ```
-lab2
-├── db         - Содержит модели объектов для БД и файл инициализации БД.
-├── endpoints  - Содержит endpoint'ы API.
-└── schemas    - Содержит схемы объектов для валидации pydantic.
+arch_practice_2
+├── db         - Содержит модели объектов для БД и файл инициализации БД
+├── endpoints  - Содержит endpoint'ы API
+└── schemas    - Содержит схемы объектов для валидации pydantic
 ```
-## Запуск Docker контейнера
+# Запуск проекта
 ```
 git clone https://github.com/tastefulKeypad/arch_practice_2.git
 cd arch_practice_2
 docker-compose up -d --build
 ```
 
-## Запуск под Linux
+# Полная очистка проекта
 ```
-git clone https://github.com/tastefulKeypad/arch_practice_2.git
-cd arch_practice_2
-python3 -m venv ./
-source ./bin/activate
-pip install -r requirements.txt
-fastapi run main.py
+docker-compose down -v 
+docker rmi arch_practice_2_image:latest
 ```
 
 ## Примеры использования
