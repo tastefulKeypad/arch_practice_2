@@ -1,8 +1,8 @@
 services:
   api:
     build: .
-    image: myapp
-    container_name: myapp_container
+    image: arch_practice_2_image
+    container_name: arch_practice_2_container
     ports:
       - "8000:8000"
     environment:
