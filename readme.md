@@ -32,7 +32,7 @@ lab2
 ```
 git clone https://github.com/tastefulKeypad/arch_practice_2.git
 cd arch_practice_2
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 ## Запуск под Linux
