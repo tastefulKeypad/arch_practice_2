@@ -21,15 +21,21 @@
 - [x] Завершение аренды
 - [x] Получение истории аренд
 
-## Структура проекта
+### Структура проекта
 ```
 lab2
 ├── db         - Содержит модели объектов для БД и файл инициализации БД.
 ├── endpoints  - Содержит endpoint'ы API.
 └── schemas    - Содержит схемы объектов для валидации pydantic.
 ```
+## Запуск Docker контейнера
+```
+git clone https://github.com/tastefulKeypad/arch_practice_2.git
+cd arch_practice_2
+docker-compose up -d
+```
 
-# Запуск под Linux
+## Запуск под Linux
 ```
 git clone https://github.com/tastefulKeypad/arch_practice_2.git
 cd arch_practice_2
@@ -39,7 +45,8 @@ pip install -r requirements.txt
 fastapi run main.py
 ```
 
-# Примеры использования
+## Примеры использования
+После запуска на localhost:8000/docs будет доступна интерактивная OPENAPI документация проекта.
 
 Чтобы инициализировать бд пользователями и автомобилями используйте endpoint 'populate_db', после чего можно будет авторизироваться как администратор:
 

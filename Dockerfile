@@ -1,13 +1,7 @@
 FROM python:3.12
-WORKDIR /lab
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt 
-
+WORKDIR /app
 COPY . .
+RUN pip install -r requirements.txt
+
 EXPOSE 8000
-
-RUN useradd lab
-USER lab
-
-CMD ["fastapi", "run", "main.py", "--host", "0.0.0.0", "--port", "8000"]
